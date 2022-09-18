@@ -12,6 +12,6 @@ The purpose of this software is to reliably, transparently and configurably do t
 Here's the hardware we already have:
 
 - Raspberry Pi 4 Model B 4GB
-- Waveshare 4G HAT for Raspberry Pi (LTE Cat-4/4G/3G/2G/GNSS) 
+- [Waveshare 4G HAT for Raspberry Pi (LTE Cat-4/4G/3G/2G/GNSS)](https://core-electronics.com.au/waveshare-4g-hat-for-raspberry-pi-lte-cat-4-4g-3g-2g-gnss.html)
 - Big normally-open momentary switch that can be wired to a GPIO pin of the RPi
 
