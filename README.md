@@ -19,11 +19,36 @@ Here's the hardware we already have:
 # Feature Specification
 
 ## Minimum Requirements
-- on button press:
-  - play countdown.wav on speaker(opportunity for user to cancel)
-  - send alert_message by SMSes to contacts in specified order after specified delays (announce each action on speaker); and
+
+
+### On button press:
+  - play countdown.wav on speaker (opportunity for user to cancel)
+  - Check for cell network connection
+  - send alert_message by SMSes to contact_list in specified order after specified delays (announce each action on speaker); and
   - loop waiting.wav on speaker; while
   - listen for reply SMS from contacts, and on receiving message containing acknowledge_keyword:
     - announce receipt of acknowledge_keyword
     - loop help_on_way.wav on speaker
+  - listen for SMS from user, and on receiving cancel_keyword:
+    - reset
+
+### Connection monitoring
+  - Every 5 minutes:
+    - check for cell network connection, and if not connected:
+      - 
+
+### Config Web App
+  - Connect to LAN via WiFi
+  - Serve web app on port 80
+  - Allow user to set:
+    - alert_message
+    - contact_list:
+      - name
+      - phone_number
+      - delay
+    -  acknowledge_keyword
+    -  cancel_keyword
+
+
   - 
+  
