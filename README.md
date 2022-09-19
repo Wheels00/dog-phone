@@ -54,3 +54,8 @@ Here's the hardware we already have:
 
 ### Installation
 - Install all components and dependencies by shell script
+
+# Approach thus far
+This may not be the best approach, but it's what I have thus far.
+
+- Waveshare Phone HAT is controlled by AT commands, with helper functions defined in phonelib.py (based on the [Waveshare demo code]())
