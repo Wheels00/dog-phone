@@ -16,7 +16,7 @@ Here's the hardware we already have:
 - Big normally-open momentary switch that can be wired to a GPIO pin of the RPi
 - Speaker with line in
 
-[^1]: [Extra info](https://www.waveshare.com/wiki/SIM7600E-H_4G_HAT)
+[^1]: [Extra Waveshare info](https://www.waveshare.com/wiki/SIM7600E-H_4G_HAT)
 
 # Feature Specification
 
