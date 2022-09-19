@@ -22,33 +22,35 @@ Here's the hardware we already have:
 
 
 ### On button press:
-  - play countdown.wav on speaker (opportunity for user to cancel)
-  - Check for cell network connection
-  - send alert_message by SMSes to contact_list in specified order after specified delays (announce each action on speaker); and
-  - loop waiting.wav on speaker; while
-  - listen for reply SMS from contacts, and on receiving message containing acknowledge_keyword:
-    - announce receipt of acknowledge_keyword
-    - loop help_on_way.wav on speaker
-  - listen for SMS from user, and on receiving cancel_keyword:
-    - reset
+- play countdown.wav on speaker (opportunity for user to cancel)
+- Check for cell network connection
+- send alert_message by SMSes to contact_list in specified order after specified delays (announce each action on speaker); and
+- loop waiting.wav on speaker; while
+- listen for reply SMS from contacts, and on receiving message containing acknowledge_keyword:
+  - announce receipt of acknowledge_keyword
+  - loop help_on_way.wav on speaker
+- listen for SMS from user, and on receiving cancel_keyword:
+  - reset
 
 ### Connection monitoring
-  - Every 5 minutes:
-    - check for cell network connection, and if not connected:
-      - 
+- Every 5 minutes:
+  - check for cell network connection, and if not connected after 10 minutes:
+    - play no_signal.wav on speaker
 
 ### Config Web App
-  - Connect to LAN via WiFi
-  - Serve web app on port 80
-  - Allow user to set:
-    - alert_message
-    - contact_list:
-      - name
-      - phone_number
-      - delay
-    -  acknowledge_keyword
-    -  cancel_keyword
+- Connect to LAN via WiFi
+- Serve web app on port 80
+- Allow user to set:
+  - alert_message
+  - contact_list:
+    - name
+    - phone_number
+    - delay
+  -  acknowledge_keyword
+  -  cancel_keyword
 
+### Boot
+- Automatically run all scripts on boot
 
-  - 
-  
+### Installation
+- Install all components and dependencies by shell script
