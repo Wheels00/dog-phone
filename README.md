@@ -12,9 +12,11 @@ The purpose of this software is to reliably, transparently and configurably do t
 Here's the hardware we already have:
 
 - Raspberry Pi 4 Model B 4GB
-- [Waveshare 4G HAT for Raspberry Pi (LTE Cat-4/4G/3G/2G/GNSS)](https://core-electronics.com.au/waveshare-4g-hat-for-raspberry-pi-lte-cat-4-4g-3g-2g-gnss.html) with Aldi Mobile Sim
+- [Waveshare 4G HAT for Raspberry Pi (LTE Cat-4/4G/3G/2G/GNSS)](https://core-electronics.com.au/waveshare-4g-hat-for-raspberry-pi-lte-cat-4-4g-3g-2g-gnss.html)[^1] with Aldi Mobile Sim
 - Big normally-open momentary switch that can be wired to a GPIO pin of the RPi
 - Speaker with line in
+
+[^1]: [Extra info](https://www.waveshare.com/wiki/SIM7600E-H_4G_HAT)
 
 # Feature Specification
 
@@ -58,4 +60,4 @@ Here's the hardware we already have:
 # Approach thus far
 This may not be the best approach, but it's what I have thus far.
 
-- Waveshare Phone HAT is controlled by AT commands, with helper functions defined in phonelib.py (based on the [Waveshare demo code]())
+- Waveshare Phone HAT is controlled by AT commands, with helper functions defined in phonelib.py (based on the [Waveshare demo code](https://www.waveshare.com/w/upload/2/29/SIM7600X-4G-HAT-Demo.7z))
