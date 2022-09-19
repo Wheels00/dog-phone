@@ -23,4 +23,7 @@ Here's the hardware we already have:
   - play countdown.wav on speaker(opportunity for user to cancel)
   - send alert_message by SMSes to contacts in specified order after specified delays (announce each action on speaker); and
   - loop waiting.wav on speaker; while
-  - listen for reply SMS from contacts, and on receiving message containing 
+  - listen for reply SMS from contacts, and on receiving message containing acknowledge_keyword:
+    - announce receipt of acknowledge_keyword
+    - loop help_on_way.wav on speaker
+  - 
