@@ -1,0 +1,41 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+{{ super() }}
+<style>
+    body {
+        background: #e8f1f9;
+    }
+
+    .alert-error {
+        color: red;
+    }
+</style>
+{% endblock %}
+
+
+{% block title %}
+Dog Phone Config
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+
+            <h1 class="pt-5 pb-2">Dog Phone Config</h1>
+
+            <a href="/contacts">Set Contacts</a><br>
+			<a href="/wifi">Set Wifi</a><br>
+            <a href="/test">Send Test SMS</a><br>
+
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

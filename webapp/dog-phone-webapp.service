@@ -1,0 +1,17 @@
+[Unit]
+Description=webapp
+After=multi-user.target
+
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+Type=idle
+User=pi
+WorkingDirectory=/home/pi/
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/bin/python3 /home/pi/webapp/app.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,47 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+{{ super() }}
+<style>
+    body {
+        background: #e8f1f9;
+    }
+
+    .alert-error {
+        color: red;
+    }
+</style>
+{% endblock %}
+
+
+{% block title %}
+Numbers
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+
+            <h1 class="pt-5 pb-2">Numbers</h1>
+
+            <p class="lead">Emergency contact numbers</p>
+
+            {{ wtf.quick_form(form) }}
+
+            {% for field, errors in form.errors.items() %}
+            <div class="alert alert-error">
+                {{ form[field].label }}: {{ ', '.join(errors) }}
+            </div>
+            {% endfor %}
+
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
