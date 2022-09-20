@@ -50,6 +50,8 @@ Here's the hardware we already have:
     - delay
   -  acknowledge_keyword
   -  cancel_keyword
+  - Wifi SSID
+  - Wifi password
 
 ### Boot
 - Automatically run all scripts on boot
