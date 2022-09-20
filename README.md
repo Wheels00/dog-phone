@@ -64,3 +64,4 @@ This may not be the best approach, but it's what I have thus far.
 
 - Waveshare Phone HAT is controlled by AT commands, with helper functions defined in phonelib.py (based on the [Waveshare demo code](https://www.waveshare.com/w/upload/2/29/SIM7600X-4G-HAT-Demo.7z))
 - Web app via [Flask](https://flask.palletsprojects.com/en/2.2.x/) and [Flask-WTF](https://flask-wtf.readthedocs.io/en/1.0.x/)
+  - Web app saves user preferences to json files in the storage folder
