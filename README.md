@@ -69,6 +69,10 @@ Here's the hardware we already have:
 ### Installation
 - Install all components and dependencies by running setup.sh
 
+## Eventual features
+- 'just a drill' mode
+- speaker phone phone call
+
 # Approach thus far
 This may not be the best approach, but it's what I have thus far.
 
