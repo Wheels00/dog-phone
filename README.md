@@ -9,7 +9,7 @@ The purpose of this software is to reliably, transparently and configurably do t
 
 The idea for this project came from Claire S and her service dog, Ned.
 
-# Call for help
+# Contribute
 
 I [Mark Brown] am making only very slow progress due to lack of knowledge of Linux, Python, and Flask. Assistance needed! 
 
