@@ -1,4 +1,4 @@
-# Dog Phone
+
 A 1-button alarm system for Raspberry Pi and cell phone hat. Dog presses button -> SMSes sent to emergency contacts
 
 # Purpose
@@ -6,6 +6,16 @@ A 1-button alarm system for Raspberry Pi and cell phone hat. Dog presses button 
 A service dog can be trained to press a button to call for help when a person with a disability needs help but can’t get to the phone. If you know your service dog can call for help, you feel more confident and secure, especially if you can customise who gets contacted, when, in what order, and what information they receive.
 
 The purpose of this software is to reliably, transparently and configurably do this.
+
+The idea for this project came from Claire S and her service dog, Ned.
+
+# Call for help
+
+I [Mark Brown] am making only very slow progress due to lack of knowledge of Linux, Python, and Flask. Assistance needed! 
+
+Two ways you can help:
+1. Read this README then add suggestions under [Issues](https://github.com/Wheels00/dog-phone/issues) for how to achieve the aims 
+2. Clone this repo, make code contributions, and then send us a pull-request
 
 # Hardware
 
@@ -62,6 +72,11 @@ Here's the hardware we already have:
 # Approach thus far
 This may not be the best approach, but it's what I have thus far.
 
-- Waveshare Phone HAT is controlled by AT commands, with helper functions defined in phonelib.py (based on the [Waveshare demo code](https://www.waveshare.com/w/upload/2/29/SIM7600X-4G-HAT-Demo.7z))
 - Web app via [Flask](https://flask.palletsprojects.com/en/2.2.x/) and [Flask-WTF](https://flask-wtf.readthedocs.io/en/1.0.x/)
-  - Web app saves user preferences to json files in the storage folder
+  - Web app saves user config to json files in the storage folder
+- 'main' program 
+  - reads user preferences from json files in the storage folder
+  - Monitors GPIO pin for button press
+  - Interacts with Waveshare Phone HAT by AT commands, with helper functions defined in phonelib.py (based on the [Waveshare demo code](https://www.waveshare.com/w/upload/2/29/SIM7600X-4G-HAT-Demo.7z))
+  - plays audio on speaker
+
