@@ -11,7 +11,7 @@ The idea for this project came from Claire S and her service dog, Ned.
 
 # Contribute
 
-I [Mark Brown] am making only very slow progress due to lack of knowledge of Linux, Python, and Flask. Assistance needed! 
+I [Wheels00](https://github.com/Wheels00) am making only very slow progress due to lack of knowledge of Linux, Python, and Flask. Assistance needed! 
 
 Two ways you can help:
 1. Read this README then add suggestions under [Issues](https://github.com/Wheels00/dog-phone/issues) for how to achieve the aims 
