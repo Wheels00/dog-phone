@@ -67,7 +67,7 @@ Here's the hardware we already have:
 - Automatically run all scripts on boot
 
 ### Installation
-- Install all components and dependencies by shell script
+- Install all components and dependencies by running setup.sh
 
 # Approach thus far
 This may not be the best approach, but it's what I have thus far.
